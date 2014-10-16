@@ -103,7 +103,7 @@ Lists
 dl, menu, ol, ul { margin: 1em 0; }
 dd { margin: 0 0 0 40px; }
 /* * Addresses paddings set differently in IE 6/7. */
-menu, ol, ul { padding: 0 0 0 40px; }
+menu, ol, ul { padding: 0 0 0 0; }
 /* * Corrects list images handled incorrectly in IE 7. */
 nav ul, nav ol { list-style: none; list-style-image: none; }
 /* ==========================================================================
@@ -318,7 +318,7 @@ Contact
 /* ==========================================================================
 Footer
 ========================================================================== */
-footer a { color: #a1a9b0; }
+footer a { color: #fff; }
 footer { background-color: #1e1025; padding: 40px 0 30px; }
 footer p { color: #fff; }
 ul.legals { list-style: none; color: #fff; line-height: 25px; }
@@ -355,4 +355,17 @@ a, a:hover, a:active, a:focus {
 
 .contact-details i {
   margin-right: 15px;
+}
+
+footer {
+  color: #fff;
+}
+
+.footer-nav li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+footer a:hover {
+  color: #fff;
+  opacity: 0.5;
 }
