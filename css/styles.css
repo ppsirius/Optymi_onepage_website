@@ -258,8 +258,12 @@ iPhone Section
 /* ==========================================================================
 Swag
 ========================================================================== */
-.swag { background: url('../img/plants-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; }
+.swag { background: url('../img/iphone.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; }
+.swag2 { background: url('../img/aktualnosci.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; }
+.swag3 { background: url('../img/serwis.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 50px 0; }
 .swag h1 { color: #fff; font-size: 40px; letter-spacing: 5px; }
+.swag2 h1 { color: #fff; font-size: 40px; letter-spacing: 5px; }
+.swag3 h1 { color: #fff; font-size: 30px; letter-spacing: 3px; }
 .swag h1 span { display: block; font-size: 25px; margin-top: 20px; }
 .down-arrow-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: rgba(255, 255, 255, 0.9); display: inline-block; margin: 10px auto 20px; color: #1e1025; font-size: 16px; line-height: 40px; text-align: center; }
 .down-arrow-btn:hover, .down-arrow-btn:focus { color: #fff; background: rgba(90, 38, 113, 0.9); border:1px solid rgba(255, 255, 255, 0.5); }
@@ -359,6 +363,7 @@ a, a:hover, a:active, a:focus {
 
 footer {
   color: #fff;
+  background: none repeat scroll 0 0 rgba(34, 16, 36, 0.3;)
 }
 
 .footer-nav li {
@@ -368,4 +373,11 @@ footer {
 footer a:hover {
   color: #fff;
   opacity: 0.5;
+}
+
+.copyright {
+  float: right;
+  font-size: 12px;
+  text-align: right;
+  padding-top: 95px; 
 }
