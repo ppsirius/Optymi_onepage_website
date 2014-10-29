@@ -1,11 +1,8 @@
 /* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
- 
-/* ==========================================================================
+ /* ==========================================================================
 HTML5 display definitions
 ========================================================================== */
- 
 /* * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3. */
- 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
 /* * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3. */
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
@@ -18,11 +15,6 @@ audio:not([controls]) { display: none; height: 0; }
 /* ==========================================================================
 Base
 ========================================================================== */
-/* * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
-*    `em` units.
-* 2. Prevents iOS text size adjust after orientation change, without disabling
-*    user zoom. */
- 
 html { font-size: 100%; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
 -ms-text-size-adjust: 100%; /* 2 */ }
@@ -33,38 +25,13 @@ html, button, input, select, textarea { font-family: Helvetica, sans-serif; }
 /* * Addresses margins handled incorrectly in IE 6/7. */
 body { margin: 0; font-family: Helvetica, sans-serif; color: #1e1025; }
 /* ==========================================================================
-Links
-========================================================================== */
-/* * Addresses `outline` inconsistency between Chrome and other browsers. */
- 
-a:focus { outline: thin dotted; }
-/* * Improves readability when focused and also mouse hovered in all browsers. */
-a:active, a:hover { outline: 0; }
-/* ==========================================================================
 Typography
 ========================================================================== */
 /* * Addresses font sizes and margins set differently in IE 6/7.
 * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5, * and Chrome. */
-
-
-@font-face {
-    font-family: "Helvetica";
-    src: url("../fonts/HelveticaNeue.woff.woff") format('woff');
-}
-
-@font-face {
-    font-family: "Helvetica_Bold";
-    src: url("../fonts/HelveticaNeue-Bold.woff") format('woff');
-    font-weight: bold;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: Helvetica_Bold, sans-serif;
-}
-
-
-
- 
+@font-face { font-family: "Helvetica"; src: url("../fonts/HelveticaNeue.woff.woff") format('woff'); }
+@font-face { font-family: "Helvetica_Bold"; src: url("../fonts/HelveticaNeue-Bold.woff") format('woff'); font-weight: bold; }
+h1, h2, h3, h4, h5, h6 { font-family: Helvetica_Bold, sans-serif; }
 h1 { font-size: 2em; margin: 0.67em 0; color: #353535; }
 h2 { font-size: 1.5em; margin: 0.83em 0; }
 h3 { font-size: 1.17em; margin: 1em 0; }
@@ -191,6 +158,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 Global Styles
 ========================================================================== */
 a { color: #353535; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
+a, a:hover, a:active, a:focus { outline: none; }
 a:hover, a:focus { color: #592571; text-decoration: none; }
 p { color: #242424; word-spacing: 1px; line-height: 25px; font-size: 14px; }
 h2 { font-size: 22px; color: #353535; text-transform: uppercase; font-weight: bold; }
@@ -234,7 +202,7 @@ Hero
 .hero { background: url('../img/optymi-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
 .hero h1 { font-size: 24px; letter-spacing: 6px; margin: 10px; margin-top: 26px;}
 .hero h1 span { color: #a1a9b0; display: inline-block; }
-.hero p { letter-spacing: 1px; }
+.hero p { letter-spacing: 1px; font-size: 22px;}
 .learn-more-btn { background: rgba(61, 201, 179, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #309383; -moz-box-shadow: 0px 3px 0px 0px #309383; box-shadow: 0px 3px 0px 0px #309383; margin: 60px 0 0; font-weight: bold; }
 .learn-more-btn:hover, .learn-more-btn:focus { background: rgba(61, 201, 179, 0.6); color: #fff; }
 /* ==========================================================================
@@ -268,7 +236,7 @@ Swag
 .down-arrow-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: rgba(255, 255, 255, 0.9); display: inline-block; margin: 10px auto 20px; color: #1e1025; font-size: 16px; line-height: 40px; text-align: center; }
 .down-arrow-btn:hover, .down-arrow-btn:focus { color: #fff; background: rgba(90, 38, 113, 0.9); border:1px solid rgba(255, 255, 255, 0.5); }
 /* ==========================================================================
-Portfolio
+Shops
 ========================================================================== */
 .effects { padding-left: 15px; }
 .effects .img { position: relative; margin-bottom: 50px; position: relative; z-index: 1; overflow: hidden; }
@@ -287,12 +255,6 @@ a.expand { display: block; position: absolute; z-index: 100; text-align: center;
 .img img { width: -webkit-calc(100% + 40px) !important; width: calc(100% + 40px) !important; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; -moz-transition: opacity 0.35s, -moz-transform 0.35s; -o-transition: opacity 0.35s, -o-transform 0.35s; -webkit-transform: translate3d(-40px, 0, 0); transform: translate3d(-40px, 0, 0); -ms-transform: translate3d(-40px, 0, 0); }
 .img:hover img { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -ms-transform: translate3d(-40px, 0, 0); }
 .designs { position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; top: 50px; }
-/* ==========================================================================
-Subscribe
-========================================================================== */
-.subscribe { background: url('../img/keyboard-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 80px 0 140px; }
-.subscribe h1 { color: #fff; margin-bottom: 40px; }
-.subscribe h1 span { display: block; font-size: 15px; text-transform: uppercase; font-weight: bold; margin-top: 20px; letter-spacing: 1px; }
 
 /* ==========================================================================
 CTA
@@ -319,23 +281,24 @@ Contact
 .contact-details h2 { font-size: 20px; }
 .contact-details h2 span { display: block; color: #592571; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; margin-top: 15px; }
 .contact-wrap { position: relative; }
+.margin-bt-first { margin-top: 40px; }
 /* ==========================================================================
 Footer
 ========================================================================== */
+footer { color: #fff; background: none repeat scroll 0 0 rgba(34, 16, 36, 0.3;) }
 footer a { color: #fff; }
+footer a:hover { color: #fff; opacity: 0.5; }
 footer { background-color: #1e1025; padding: 40px 0 30px; }
 footer p { color: #fff; }
+.footer-nav li { list-style: none; margin-bottom: 5px; }
 ul.legals { list-style: none; color: #fff; line-height: 25px; }
 ul.legals li { display: inline-block; }
 ul.legals li::after { content: " |"; }
 ul.legals li:last-child::after { content: ""; }
 .legals { text-align: left; }
 .credit { text-align: right; }
-/* ==========================================================================
-FlexSlider Custom CSS
-========================================================================== */
-#servicesSlider { margin-top: 70px; }
-ul.slides li { margin-bottom: 20px; }
+.contact-details i { margin-right: 15px; }
+.copyright { float: right; font-size: 12px; text-align: right; padding-top: 95px; }
 /* ==========================================================================
 Waypoints
 ========================================================================== */
@@ -345,39 +308,3 @@ Waypoints
 .delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
 .wp3 { background: url('../img/iphone-bg.png') no-repeat center center; background-position: 200px 10px; height: 100%; }
 
-.hero p {
-  font-size: 22px;
-}
-
-a, a:hover, a:active, a:focus {
-  outline: none;
-}
-
-.margin-bt-first {
-  margin-top: 40px;
-}
-
-.contact-details i {
-  margin-right: 15px;
-}
-
-footer {
-  color: #fff;
-  background: none repeat scroll 0 0 rgba(34, 16, 36, 0.3;)
-}
-
-.footer-nav li {
-  list-style: none;
-  margin-bottom: 5px;
-}
-footer a:hover {
-  color: #fff;
-  opacity: 0.5;
-}
-
-.copyright {
-  float: right;
-  font-size: 12px;
-  text-align: right;
-  padding-top: 95px; 
-}
