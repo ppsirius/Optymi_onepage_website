@@ -1,3 +1,3 @@
 Optymi_onepage_website
 ======================
-Already running [optymi.pl/](http://optymi.pl/)
+Already running [optymi.pl](http://optymi.pl)
